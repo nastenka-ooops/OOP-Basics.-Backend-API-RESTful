@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class WeightedAverages {
-    public static void main(String[] args) {
-        solution();
-    }
     public static int[] weights = new int[]{2,3,5};
     public static ArrayList<ArrayList<Float>> tests = new ArrayList<>();
     public static int amount;
