@@ -23,10 +23,10 @@ public class WeightedAverages {
     }
     public static void solution(){
         readData();
-        for (ArrayList<Float> numbers :
-                tests) {
-            float average = (numbers.get(0)*weights[0]+ numbers.get(1)*weights[1]+numbers.get(2)*weights[2])/
-                    (weights[0]+weights[1]+weights[2]);
+        for (ArrayList<Float> numbers : tests) {
+            float numberSum = numbers.get(0)*weights[0] + numbers.get(1)*weights[1] + numbers.get(2)*weights[2];
+            int totalAmount = weights[0]+weights[1]+weights[2];
+            float average = numberSum / totalAmount;
             String result = String.format("%.1f",average);
             System.out.println(result.replace(',','.'));
         }
